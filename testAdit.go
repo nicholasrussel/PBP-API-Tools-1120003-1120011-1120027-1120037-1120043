@@ -1,3 +1,7 @@
 package toolsapigo
 
-//Test
+import "fmt"
+
+func main() {
+	fmt.Println("Hello World")
+}
