@@ -3,7 +3,5 @@ package toolsapigo
 import "fmt"
 
 func main() {
-	fmt.Println("Hello World")
-
-	//Edit
+	fmt.Println("Adit pacarnya banyak")
 }
