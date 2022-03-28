@@ -1,5 +1,9 @@
 package main
 
+import (
+	"gopkg.in/gomail.v2"
+)
+
 func TestGomail() {
 	m := gomail.NewMessage()
 	m.SetHeader("From", "alex@example.com")
