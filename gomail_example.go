@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gopkg.in/gomail.v2"
+	gomail "gopkg.in/gomail.v2"
 )
 
 func TestGomail() {
