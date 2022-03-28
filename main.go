@@ -11,6 +11,7 @@ import (
 
 func main() {
 	log.Println("Hello World")
+
 	TestGomail()
 
 	// Calling Goroutine
@@ -18,6 +19,7 @@ func main() {
 
 	// Calling normal function
 	display("GeeksforGeeks")
+
 }
 
 func LoadEnv(key string) string {
