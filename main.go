@@ -9,7 +9,8 @@ import (
 
 func main() {
 	log.Println("Hello World")
-	TestGomail()
+	//TestGomail()
+	TestGoRedis()
 }
 
 func LoadEnv(key string) string {
