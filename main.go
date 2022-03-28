@@ -18,8 +18,7 @@ func main() {
 	go display("Welcome")
 
 	// Calling normal function
-	display("GeeksforGeeks")
-
+	display("Hari yang Cerah")
 }
 
 func LoadEnv(key string) string {
