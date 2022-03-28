@@ -1,8 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"os"
+	"time"
 
 	"github.com/joho/godotenv"
 )
@@ -10,6 +12,12 @@ import (
 func main() {
 	log.Println("Hello World")
 	TestGomail()
+
+	// Calling Goroutine
+	go display("Welcome")
+
+	// Calling normal function
+	display("GeeksforGeeks")
 }
 
 func LoadEnv(key string) string {
@@ -22,4 +30,10 @@ func LoadEnv(key string) string {
 	}
 
 	return os.Getenv(key)
+}
+func display(str string) {
+	for w := 0; w < 6; w++ {
+		time.Sleep(1 * time.Second)
+		fmt.Println(str)
+	}
 }
