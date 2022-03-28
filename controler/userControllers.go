@@ -1,5 +1,0 @@
-package controler
-
-func test() {
-
-}
