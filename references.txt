@@ -1,0 +1,3 @@
+# Gomail
+- https://github.com/go-gomail/gomail
+- https://www.niagahoster.co.id/blog/cara-setting-smtp-gmail-gratis/
