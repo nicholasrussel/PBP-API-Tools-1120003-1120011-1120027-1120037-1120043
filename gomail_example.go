@@ -20,7 +20,7 @@ func TestGomail() {
 	// m.SetAddressHeader("Cc", "dan@example.com", "Dan")
 	m.SetHeader("Subject", "Test Gomail")
 	m.SetBody("text/html", "Hello, this email was send from <b>Golang</b>!")
-	// m.Attach("/home/Alex/lolcat.jpg")
+	m.Attach("Photo 1.jpeg")
 
 	d := gomail.NewDialer("smtp.gmail.com", 465, emailSender, emailPassword)
 
