@@ -1,3 +1,18 @@
 # Gomail
 - https://github.com/go-gomail/gomail
 - https://www.niagahoster.co.id/blog/cara-setting-smtp-gmail-gratis/
+
+# GoRoutine
+https://dasarpemrogramangolang.novalagung.com/A-goroutine.html
+
+# GoCRON
+https://github.com/go-co-op/gocron
+
+# GoRedis
+https://github.com/go-redis/redis
+https://dasarpemrogramangolang.novalagung.com/C-golang-redis.html
+https://docs.microsoft.com/id-id/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
+https://tutorialedge.net/golang/go-redis-tutorial/
+
+
+
