@@ -12,8 +12,8 @@ import (
 func main() {
 	log.Println("Hello World")
 
-	TestGomail()
-
+	//TestGomail()
+	TestGocron()
 	// Calling Goroutine
 	go display("Welcome")
 
