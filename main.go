@@ -10,9 +10,10 @@ import (
 func main() {
 	log.Println("Hello World")
 
-	//TestGomail()
-	// TestGocron()
+	TestGomail()
+	TestGocron()
 	TestGoRoutine()
+	TestGoRedis()
 }
 
 func LoadEnv(key string) string {
