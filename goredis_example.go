@@ -21,6 +21,7 @@ func newRedisClient(host string, password string) *redis.Client {
 		Password: password,
 		DB:       0,
 	})
+
 	return client
 }
 
@@ -39,7 +40,7 @@ func getDataRedis(con *redis.Client, key string) {
 func TestGoRedis() {
 
 	//Port Disesuaikan
-	var redisHost = "localhost:425"
+	var redisHost = "localhost:6379"
 	var redisPassword = ""
 
 	con := newRedisClient(redisHost, redisPassword)
@@ -47,16 +48,16 @@ func TestGoRedis() {
 	fmt.Println("Inisialisasi Redis")
 	fmt.Println("========================================")
 
-	//Contoh Misal Ingin Menyimpan Data Level Di Sebuah Game.
+	//Contoh Misal Ingin Menyimpan Data Nilai PBP.
 
-	key := "level"
-	data := 1
+	key := "pbp"
+	data := 99
 	exp := time.Duration(3) * time.Second
 
 	ctx := context.Background()
 
 	//Set Data
-	fmt.Println("Mencoba Set Level 0")
+	fmt.Println("Mencoba Set Nilai PBP")
 	err := con.Set(ctx, key, data, exp).Err()
 	if err != nil {
 		fmt.Printf("Gagal SET data. error: %v", err)
@@ -70,7 +71,7 @@ func TestGoRedis() {
 	getDataRedis(con, key)
 
 	//Icrement Data
-	fmt.Println("Mencoba Increment Level")
+	fmt.Println("Mencoba Increment Nilai PBP")
 	err = con.Incr(ctx, key).Err()
 	if err != nil {
 		fmt.Printf("Gagal Increment data. error: %v", err)
